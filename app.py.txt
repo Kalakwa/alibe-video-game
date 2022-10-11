@@ -1,0 +1,15 @@
+import streamlit as st
+
+
+st.set_page_config(page_title='Alibe', page_icon=':tada:', layout='wide')
+
+
+st.subheader('The first video game in the series!')
+st.title('Alibe: Libb Like Me')
+st.write('Hello! I am very glad you are able to join in on this journey of being '
+             'alibe with me! I am Shaman ZONGAZ, a profound Shaman who shifts this '
+             'realm through artistic depiction. This artistic project, ALIBE: '
+             'Libb Like Me, is a project I started as a thank you to my dear '
+             'partner Elizabeth, for all of the support and lessons she has '
+             'lended me through life. She has truly taught me to view the world '
+             'with a peculiar lens and live every day to the fullest.')
