@@ -13,11 +13,13 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-def local_css(file_name):
-    with open(file_name) as fi:
-        st.markdown(f"<style>{fi.read()}</style>", unsafe_allow_html=True)
 
-local_css("style/style.css")
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
+local_css("style\style.css.txt")
 
 # Load assets
 lottie_coding = load_lottieurl(
@@ -73,10 +75,11 @@ contact_form = """
     <button type="submit">Send</button>
 </form>
 """
-left_column, right_column = st.columns(2)
-with left_column:
-    st.markdown(contact_form, unsafe_allow_html=True)
-with right_column:
-    st.empty()
+with st.container():
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.markdown(contact_form, unsafe_allow_html=True)
+    with right_column:
+        st.empty()
 
 # art stuff
