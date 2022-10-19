@@ -18,7 +18,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-local_css("style\\style.css.txt")
+local_css("webpage\style.css.txt")
 
 # Load assets
 lottie_coding = load_lottieurl(
