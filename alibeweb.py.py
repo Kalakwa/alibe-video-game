@@ -13,13 +13,6 @@ def load_lottieurl(url):
     return r.json()
 
 
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-
-local_css("webpage\style.css.txt")
-
 # Load assets
 lottie_coding = load_lottieurl(
     'https://assets9.lottiefiles.com/packages/lf20_y2nlvxyz.json')
@@ -67,9 +60,9 @@ with st.container():
 contact_form = """
 <form action="https://formsubmit.co/mortapolis@gmail.com" method="POST">
     <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="name" placeholder="Your name" required>
-    <input type="email" name="email" placeholder="Your email" required>
-    <textarea name="message" placeholder="Your message here" required></textarea>
+    <input type="text" name="name" placeholder="Your name" required<br>>
+    <input type="email" name="email" placeholder="Your email" required<br>>
+    <textarea name="message" placeholder="Your message here" required></textarea<br>>
     <button type="submit">Send</button>
 </form>
 """
@@ -80,4 +73,4 @@ with st.container():
     with right_column:
         st.empty()
 
-# art stuff
+
