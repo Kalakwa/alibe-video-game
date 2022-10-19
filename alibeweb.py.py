@@ -3,7 +3,6 @@ import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
 
-
 st.set_page_config(page_title='Alibe', page_icon=':unamused:', layout='wide')
 
 
@@ -19,7 +18,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-local_css("style\style.css.txt")
+local_css("style\\style.css.txt")
 
 # Load assets
 lottie_coding = load_lottieurl(
@@ -46,8 +45,9 @@ with st.container():
                  'restore the land with different vegetation, including ingredients for Alchemy and cooking! ')
         st.write('- Find the right way to express yourself in Alibe with over 500 customization options '
                  'for your character!')
-        st.write('- Learn about living in Alibe with the mastery of 11 different classes to choose from, including the Sigil of '
-                 'the Knights, Gardners, Geocachers, Snorkelers and more!')
+        st.write(
+            '- Learn about living in Alibe with the mastery of 11 different classes to choose from, including the Sigil of '
+            'the Knights, Gardners, Geocachers, Snorkelers and more!')
 
         st.write('I wish you the best, and please reach out to my email \(found at the bottom\) '
                  'with any questions regarding the video game project. I have placed a request for information '
@@ -58,13 +58,11 @@ with st.container():
     with right_column:
         st_lottie(lottie_coding, height=300, key='coding')
 
-
 with st.container():
     st.write('~~~~~~~~~')
     image_column, text_column = st.columns((1, 2))
     with image_column:
         st.image(lottie_manny)
-
 
 contact_form = """
 <form action="https://formsubmit.co/mortapolis@gmail.com" method="POST">
