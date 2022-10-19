@@ -60,10 +60,10 @@ with st.container():
 contact_form = """
 <form action="https://formsubmit.co/mortapolis@gmail.com" method="POST">
     <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="name" placeholder="Your name" required<br>>
-    <input type="email" name="email" placeholder="Your email" required<br>>
-    <textarea name="message" placeholder="Your message here" required></textarea<br>>
-    <button type="submit">Send</button>
+    <input type="text" name="name" placeholder="Your name" required>
+    <br><input type="email" name="email" placeholder="Your email" required>
+    <br><textarea name="message" placeholder="Your message here" required></textarea>
+    <br><button type="submit">Send</button>
 </form>
 """
 with st.container():
